@@ -1,0 +1,432 @@
+html{
+     scroll-behavior: smooth;
+}
+body{
+     font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+     font-family:  "Poppins", sans-serif;
+     color: #282828;
+     font-weight: 600;
+}
+.navbar{
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     box-shadow: 5px 5px 15px 0 rgb(31 31 31 / 7%);
+     background-color: transparent;
+     padding: 18px 60px;
+     transition: .3s;
+}
+.navbar-nav .nav-link{
+     transition: 0.3s;
+     font-size: 13px;
+     font-weight: 600;
+     letter-spacing: .2px;
+     padding-top: 0;
+     color: #f3f3f3;
+     padding-bottom: 0;
+     
+}
+.header_change{
+     background: #fff;
+     color: black;
+     transition: .5s  ;
+}
+.header_change .nav-link{
+     color: black;
+     transition: .5s  ;
+}
+.navbar-nav .nav-link:hover{
+     color: #f25454;
+}
+.navbar-nav .active>.nav-link{
+     color: #f25454;
+}
+.navbar-toggler{
+     color: #fff;
+}
+.carousel-item{
+     height: 100vh;
+     min-height: 300px;
+}
+.carousel-content{
+     top: 35%;
+     left: 33%;
+     position: absolute;
+     text-align: center;
+}
+.carousel-content h2{
+     color: #fff;
+     font-size: 65px;
+
+}
+.carousel-control-prev{
+     left: 0;
+     top: 40%;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 25px;
+     cursor: pointer;
+     color: #fff;
+     text-decoration: none;
+     border: 1px solid rgba(255, 255, 255, 0.7);
+     border-left: 0 ;
+     overflow: hidden;
+     transition: all 0.3s ease;
+     z-index: 2;
+}
+
+.carousel-control-next{
+     position: absolute;
+     left: 0;
+     top: 50%;
+     bottom: 0;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 25px;
+     cursor: pointer;
+     text-decoration: none;
+     border: 1px solid rgba(255, 255, 255, 0.7);
+     border-left: 0;
+     overflow: hidden;
+     transition: all 0.3s ease;
+     z-index: 2;
+}
+.carousel .icon:hover ,
+.carousel .icon:hover{
+     color: #f25454;
+     background-color: #fff;
+     transform: translateX(50%);
+}
+
+
+.settings_close{
+     width: 39px;
+     height: 39px;
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 30%;
+     background-image: url(../imges/icon_panel.png);
+     background-color: #1f2528;
+     z-index: 2;
+}
+.all-titel h2{
+     font-size: 40px;
+     line-height: 38px;
+     font-weight: 700;
+     top: 40px;
+}
+.all-titel h3{
+     font-size: 80px;
+     font-weight: 700;
+     color: #f3f3f3;
+}
+.abuot .abuot-progrs .progress-bar{
+     background-color: #f25454;
+     border-radius: 5px;
+}
+.abuot .abuot-progrs .num1{
+     opacity: 1;
+     font-size: 15px;
+     animation-name: number;
+     animation-duration: 3s;
+     position: relative;
+     left: 88%;
+     font-weight: bold;
+}
+.abuot .abuot-progrs .num2{
+     opacity: 1;
+     font-size: 15px;
+     animation-name: number2;
+     animation-duration: 3s;
+     position: relative;
+     left: 95%;
+     font-weight: bold;
+}
+.abuot .abuot-progrs .num3{
+     opacity: 1;
+     font-size: 15px;
+     animation-name: number3;
+     animation-duration: 3s;
+     position: relative;
+     left: 85%;
+     font-weight: bold;
+}
+.abuot .abuot-progrs .num4{
+     opacity: 1;
+     font-size: 15px;
+     animation-name: number4;
+     animation-duration: 3s;
+     position: relative;
+     left: 70%;
+     font-weight: bold;
+}
+@keyframes number{
+     0%{
+          opacity: 0;
+          left: 0%;
+     }
+     100%{
+          opacity: 1;
+          font-weight: bold;
+          left: 95%;
+     }
+}
+@keyframes number2{
+     0%{
+          opacity: 0;
+          left: 0%;
+     }
+     100%{
+          opacity: 1;
+          font-weight: bold;
+          left: 88%;
+     }
+}
+@keyframes number3{
+     0%{
+          opacity: 0;
+          left: 0%;
+     }
+     100%{
+          opacity: 1;
+          font-weight: bold;
+          left: 85%;
+     }
+}
+@keyframes number4{
+     0%{
+          opacity: 0;
+          left: 0%;
+     }
+     100%{
+          opacity: 1;
+          font-weight: bold;
+          left: 70%;
+     }
+}
+
+.abuot .abuot-progrs .pro1{
+     animation-name: progress1;
+     width: 88%;
+     animation-duration: 3s;
+
+}
+.team .row .contact span{
+     line-height: 50px;
+     font-weight: 400;
+     margin: 0;
+     font-size: 32px;
+}
+.team .row  button{
+     border-radius: 3px;
+     padding: 18px 30px;
+     line-height: 1;
+     font-weight: 700;
+     border-width: 0;
+     background-color: #f25454;
+     color: #fff;
+}
+.services{
+     background-color: #f1f1f1;
+}
+.services .row i{
+     color: #f25454;
+     padding-right: 15px;
+     font-size: 30px;
+     font-weight: 600;
+}
+.services .row h3{
+     font-size: 18px;
+     transition: all 0.3s;
+     padding-bottom: 15px;
+     font-weight: 300;
+}
+.services .ser-contact:hover h3{
+     color: #f25454;
+}
+.services .row p{
+     color: #666;
+     padding-left: 55px;
+}
+.item{
+     width: 75%;
+     margin: 0 auto;
+}
+.item img{
+     border-radius: 50%;
+}
+.Touch{
+     background-color: #fafafa;
+}
+.Touch .all-titel h3{
+     color: white;
+}
+.Touch .row h3 {
+     font-size: 32px;
+     line-height: 32px;
+     margin: 0 0 50px 0;
+
+}
+.touch-item{
+     border-bottom:1px solid #eee ;
+     padding: 10px 0;
+}
+.Touch .touch-item i{
+     font-size: 40px;
+     color: #f25454;
+
+}
+.Touch .touch-item h4{
+     color: #282828;
+     font-weight: 600;
+     padding-left: 10px;
+}
+.Touch .input-group-lg .form-control{
+     height: 55px;
+     padding: 14px 18px;
+     color: #eee;
+     border-radius: 8px;
+     border: 2px solid #eee;
+     background-color: #fff;
+     transition: border-color 0.15s ease-in;
+}
+.input-group-lg .form-control:hover{
+     border-color:#f25454 ;
+}
+.input-group textarea{
+     height: 140px;
+     max-height: 140px;
+     padding: 14px 18px;
+     color: #a6a6a6;
+     border-radius: 3px;
+     border: 2px solid #eee;
+     background-color: #fff;
+     transition: border-color 0.15s ease-in;
+}
+.input-group textarea:hover{
+     border-color:#f25454 ;
+}
+.Touch .btn{
+     background-color: #f25454;
+     color: #fff;
+     padding: 12px 20px;
+}
+.footer{
+     background-image: url(../imges/dotted-map.png);
+     background-color: #222;
+     background-repeat: repeat-x;
+     background-size: cover;
+     background-position: center;
+}
+.footer p{
+     font-size: 18px;
+}
+.footer ul{
+     font-size:18px ;
+     list-style:none;
+     padding-left: 10px;
+     cursor: pointer;
+}
+.footer ul li{
+     transition: 0.6s color;
+     padding-bottom: 10px;
+}
+.footer ul li:hover{
+     color: #f25454;
+}
+.footer .exp{
+     display: block;
+     float: left;
+     margin-right: 8px;
+     margin-bottom: 8px;
+     padding: 4px 10px;;
+     text-decoration: none;
+     border-radius: 3px;
+     transition: 0.6s all;
+     color: #b0b0b0;
+     border: 1px solid #b0b0b0;
+}
+.footer .exp:hover{
+     border-color: #f25454;
+     color: #f25454;
+}
+footer{
+     background-color: #1a1a1a;
+}
+footer .icon-soc i{
+     padding-right: 14px;
+     font-size: 22px;
+     color: #fff;
+     transition: 0.5s all;
+}
+footer .icon-soc i:hover{
+     color: #f25454;
+}
+footer .copy p{
+     font-size: 20px;
+}
+footer .copy p a{
+     transition: 0.5s color;
+     text-decoration: none;
+     color: #fff;
+}
+footer .copy p a:hover{
+     color: #f25454;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 530px){
+     .navbar-nav{
+          text-align: center;
+          background-color: #fff;
+
+     }
+     .navbar-nav .nav-link{
+          color: #000;
+          
+     }
+     .carousel-content{
+          left: 18%;
+     }
+     .carousel-item h2{
+          font-size: 50px;
+     }
+     .team .row .contact span{
+          margin-top: 30px;
+     }
+     .team .row  button{
+          margin-top: 30px;
+     }
+     .services .row p{
+          margin-bottom: 30px;
+          text-align: center;
+     }
+}
+@media (max-width: 768px){
+     .nav-item{
+          padding: 15px 0;
+     }
+     .social-ico .nav-item{
+          display: none;
+     }
+}
